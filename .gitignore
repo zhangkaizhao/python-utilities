@@ -1,0 +1,10 @@
+*
+
+!LICENSE
+!generate-utilities.py
+!generate-version.py
+!module.py.tmpl
+!modules.txt
+!python-version.txt
+!requirements.in
+!requirements.txt

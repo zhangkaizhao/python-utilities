@@ -1,0 +1,19 @@
+import os
+import {module_name}
+
+import PyInstaller.__main__
+
+name = 'python-' + {module_name}.__name__.replace('.', '-').replace('_', '-')
+module_path = {module_name}.__file__
+workpath = os.getcwd()
+
+PyInstaller.__main__.run([
+    module_path,
+    '--name',
+    name,
+    '--onefile',
+    '--version-file',
+    'python-version.txt',
+    '--workpath',
+    workpath
+])

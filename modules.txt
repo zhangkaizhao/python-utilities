@@ -1,0 +1,12 @@
+calendar
+encodings.rot_13
+gzip
+http.server
+json.tool
+platform
+smtpd
+tarfile
+tkinter.colorchooser
+uu
+webbrowser
+zipfile

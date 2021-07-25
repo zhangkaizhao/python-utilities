@@ -2,7 +2,9 @@
 
 Build useful standalone binary executable programs from Python standard library.
 
-Name format of binary executable program: `"python-{module_path.replace('.', "-")}`
+Name format of binary executable program is `"python-{module_path.replace('.', "-")}`.
+
+They are the same as `python -m {module_path}`.
 
 (module_path -> name of binary executable program)
 
@@ -12,7 +14,7 @@ Name format of binary executable program: `"python-{module_path.replace('.', "-"
 * http.server -> python-http-server
 * json.tool -> python-json-tool
 * platform -> python-platform
-* smptd -> python-smtpd
+* smtpd -> python-smtpd
 * tarfile -> python-tarfile
 * tkinter.colorchooser -> python-tkinter-colorchooser
 * uu -> python-uu
@@ -46,3 +48,25 @@ And tools in Python's `Tool/scripts` directory.
 And demos of turtle module.
 
 ...
+
+## How to generate the utilities
+
+Before building, install required tools:
+
+```
+pip install -r requirements.txt
+```
+
+First, generate Python version for the utilities:
+
+```
+python generate-version.py
+```
+
+Second, generate the utilities:
+
+```
+python generate-utilities.py
+```
+
+All generated utilities are under `dist` directory.
