@@ -1,7 +1,9 @@
 *
 
 !LICENSE
+!README.txt
 !generate-utilities.py
+!generate-version-simple.py
 !generate-version.py
 !module.py.tmpl
 !modules.txt

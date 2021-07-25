@@ -2,14 +2,14 @@
 
 Build useful standalone binary executable programs from Python standard library.
 
-Name format of binary executable program is `"python-{module_path.replace('.', "-")}`.
+Name format of binary executable program is `"python-{module_path.replace('.', "-").replace('_', '-')}`.
 
 They are the same as `python -m {module_path}`.
 
 (module_path -> name of binary executable program)
 
 * calendar -> python-calendar
-* encodings.rot_13 -> python-encodings-rot_13
+* encodings.rot_13 -> python-encodings-rot-13
 * gzip -> python-gzip
 * http.server -> python-http-server
 * json.tool -> python-json-tool
